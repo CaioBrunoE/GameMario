@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+   background:  #964b00 ;
+}
+
+.game-boarding{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-bottom:20px solid rgba(4, 161, 4, 0.94);
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient( to bottom, cyan,#fff);
+}
+.pipe{
+    position: absolute;
+    bottom: 0;
+    background: none;
+    width: 80px;
+    height: 80px;
+    animation: pipe-animaation 2s infinite  linear; 
+}
+.mario{
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+   
+}
+
+.jump{
+     animation: jump 500ms ease-out; 
+}
+
+.clouds{
+    width: 550px;
+    height: 300px;
+    top: 0px;
+    position: absolute;
+    animation: clouds 10s infinite linear ;
+
+}
+.manudead{
+    position: absolute;
+    border-radius: 30px;
+    left: 30%;
+    top: 30%;
+    width: 380px;
+    height: 200px;
+    background:url("/image/maxresdefault.jpg");
+    background-size: cover;
+}
+
+.btnreload{
+    position: absolute;
+    left: 35%;
+    top: 55%;
+    width: 100px;
+    height: 25px;
+    color:greenyellow;
+    background: cyan;
+    font-weight: 600;
+    font-size: 15px;
+    border:1px solid red ;
+}
+
+/* .btnmenu{
+    position: absolute;
+    left: 55%;
+    top: 65%;
+    width: 100px;
+    height: 25px;
+    border: 1px solid red;
+    color:greenyellow;
+    background: cyan;
+    font-weight: 600;
+    font-size: 15px;
+} */
+
+.gram{
+    position: absolute;
+    bottom: -250px;
+    animation: gram-animatio 4s infinite linear;
+}
+@keyframes clouds {
+   from{
+   right: -380px;
+
+    }
+    to{
+      
+      right: 100%;
+    }
+}
+@keyframes jump {
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0;
+
+    }
+}
+
+@keyframes pipe-animaation{
+    from{ 
+       right: -80px;
+    }
+    to{
+      right: 100%;
+    }
+}
+@keyframes gram-animatio {
+    from{ 
+        right: -580px;
+     }
+     to{
+       right: 100%;
+     }
+    }
